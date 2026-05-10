@@ -15,30 +15,34 @@
 <body onload="loadText()">
     <main>
         <ul class="navbar">
-            <li><a href="">Home</a></li>
-            <li>Introduction</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#introduction">Introduction</a></li>
             <li>Skillset</li>
             <li>Education</li>
             <li>Resume</li>
             <li>My projects</li>
         </ul>
         <section class="section main">
-            <div class="hero min-h-screen flex items-center max-w-6xl m-auto px-4 sm:px-6 lg:px-8">
+            <div class="hero min-h-screen flex items-center max-w-6xl m-auto">
                 <div class="hero-content">
-                    <div id="home" class="landing">
+                    <div name="home" class="landing">
                         <h1 id="welcome"></h1>
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <h1 id="aboutMe"></h1>
-            </div>
-            <div class="grid-2">
-                <div class="subcontainer">
-                    <p id="appDev"></p>
-                </div>
-                <div class="subcontainer">
-                    <p id="pcEnthusiast"></p>
+            <div class="hero min-h-screen flex items-center max-w-6xl m-auto">
+                <div class="hero-content">
+                    <div name="introduction" class="container">
+                        <h1 id="aboutMe"></h1>
+                    </div>
+                    <div class="grid-2">
+                        <div class="subcontainer">
+                            <p id="appDev"></p>
+                        </div>
+                        <div class="subcontainer">
+                            <p id="pcEnthusiast"></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
