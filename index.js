@@ -1,1 +1,3 @@
-﻿
+﻿function write_intro() {
+    
+}

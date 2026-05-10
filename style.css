@@ -1,1 +1,121 @@
-﻿
+﻿.landing {
+    position: relative;
+    width: 75%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: aliceblue;
+    font-display: block;
+    text-shadow: 10px 5px 8px black;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: auto;
+    text-align: center;
+    align-content: center;
+}
+
+.container {
+    position: relative;
+    box-sizing: border-box;
+    width: 75%;
+    background-color: gray;
+    border-width: 5px solid black;
+    border-radius: 5px;
+    color: aliceblue;
+    text-shadow: 1px 1px 2px black;
+    display: block;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.grid-2 {
+    position: relative;
+    width: 75%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: aliceblue;
+    text-shadow: 1px 1px 2px black;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: auto;
+    text-align: center;
+}
+
+.subcontainer {
+    background-color: gray;
+    border-width: 5px solid black;
+    border-radius: 5px;
+    color: aliceblue;
+    text-shadow: 1px 1px 2px black;
+    display: block;
+    margin: 7.5%;
+    align-items: center;
+    padding: 15px;
+    text-align: justify;
+}
+
+@media screen and (min-width: 700px) {
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+}
+
+ul.navbar {
+    width: 100%;
+    list-style: none;
+    height: auto;
+}
+
+
+ul.navbar li {
+    float: left;
+    padding: 15px;
+}
+
+@media screen and (max-width: 700px) {
+    ul.navbar li {
+        float: none;
+        text-align: center;
+        align-content: center;
+    }
+}
+
+.hero-content {
+    width: 100%;
+}
+
+.section {
+    align-content: center;
+    align-items: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.max-w-6xl {
+    max-width: 72rem;
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.main {
+    position: relative;
+}

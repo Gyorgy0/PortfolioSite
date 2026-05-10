@@ -1,17 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio website</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body>
+</head>
+
+<body onload="loadText()">
     <main>
-        <h1>Welcome to my portfolio Website</h1>  
+        <ul class="navbar">
+            <li><a href="">Home</a></li>
+            <li>Introduction</li>
+            <li>Skillset</li>
+            <li>Education</li>
+            <li>Resume</li>
+            <li>My projects</li>
+        </ul>
+        <section class="section main">
+            <div class="hero min-h-screen flex items-center max-w-6xl m-auto px-4 sm:px-6 lg:px-8">
+                <div class="hero-content">
+                    <div id="home" class="landing">
+                        <h1 id="welcome"></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h1 id="aboutMe"></h1>
+            </div>
+            <div class="grid-2">
+                <div class="subcontainer">
+                    <p id="appDev"></p>
+                </div>
+                <div class="subcontainer">
+                    <p id="pcEnthusiast"></p>
+                </div>
+            </div>
+        </section>
     </main>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="index.js"></script>
-  </body>
+    <script src="locale.js"></script>
+</body>
+
 </html>
