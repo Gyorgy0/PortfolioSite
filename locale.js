@@ -1,5 +1,11 @@
 ﻿class Locale {
-    constructor(welcome, aboutMe, collaboration, appDev, pcEnthusiast) {
+    constructor(navbarHome, navbarIntro, navbarSkills, navbarEducation, navbarResume, navbarProjects, welcome, aboutMe, collaboration, appDev, pcEnthusiast) {
+        this.navbarHome = navbarHome;
+        this.navbarIntro = navbarIntro;
+        this.navbarSkills = navbarSkills;
+        this.navbarEducation = navbarEducation;
+        this.navbarResume = navbarResume;
+        this.navbarProjects = navbarProjects;
         this.welcome = welcome;
         this.aboutMe = aboutMe;
         this.collaboration = collaboration;
@@ -8,6 +14,12 @@
 
     }
     default() {
+        this.navbarHome = "Home";
+        this.navbarIntro = "Introduction";
+        this.navbarSkills = "Skillset";
+        this.navbarEducation = "Education";
+        this.navbarResume = "Resume";
+        this.navbarProjects = "My projects";
         this.welcome = "Hello, I'm Juraj Lukovics!";
         this.aboutMe = "I'm a hobbyist developer and PC enthusiast. My life's mission is to make software more efficient and more intuitive to use.";
         this.collaboration = "If you're as enthusiastic about making software more reliable and easier to use, then let's create something better for everyone together!";
