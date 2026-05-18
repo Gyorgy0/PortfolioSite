@@ -55,7 +55,11 @@ ul.navbar {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: #d3d3d35d;
+    background: #757171;
+    background: -webkit-linear-gradient(90deg, rgba(117, 113, 113, 0.5) 0%, rgba(66, 212, 126, 0.55) 50%, rgba(237, 221, 83, 0.6) 100%);
+    background: -moz-linear-gradient(90deg, rgba(117, 113, 113, 0.5) 0%, rgba(66, 212, 126, 0.55) 50%, rgba(237, 221, 83, 0.6) 100%);
+    background: linear-gradient(90deg, rgba(117, 113, 113, 0.5) 0%, rgba(66, 212, 126, 0.55) 50%, rgba(237, 221, 83, 0.6) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#757171", endColorstr="#EDDD53", GradientType=1);
     list-style: none;
     list-style-position: inside;
     z-index: 1;
@@ -68,6 +72,7 @@ ul.navbar li a {
     position: relative;
     z-index: 1;
     text-decoration: none;
+    font-size: large;
 }
 
 ul.navbar li a:hover {

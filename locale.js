@@ -9,7 +9,7 @@
         this.welcome = welcome;
         this.aboutMe = aboutMe;
         this.collaboration = collaboration;
-        this.appDev = appDev 
+        this.appDev = appDev
         this.pcEnthusiast = pcEnthusiast
 
     }
@@ -39,7 +39,38 @@ function loadText() {
     locale.default();
     for (let key in locale) {
         if (document.getElementById(key) != undefined) {
-        document.getElementById(key).innerText = locale[key];
+            document.getElementById(key).innerText = locale[key];
         }
     }
+    /*
+    Object.values(Platforms).forEach( platform => {
+        document.getElementById("Skillset").innerHTML += platform.icon;
+    });
+    */
 }
+
+class Platform {
+    constructor(name, icon) {
+        this.name = name;
+        this.icon = icon;
+    }
+}
+
+const ICON_CLASS = "";
+
+const Windows = new Platform('Windows', `<img class="` + ICON_CLASS + `" src="assets/icons/windows.svg">`);
+const MacOS = new Platform('MacOS', `<img class="` + ICON_CLASS + `" src="assets/icons/macos.svg">`);
+const iOS = new Platform('iOS', `<img class="` + ICON_CLASS + `" src="assets/icons/ios.svg">`);
+const Linux = new Platform('Linux', `<img class="` + ICON_CLASS + `" src="assets/icons/linux.svg">`);
+const WASM = new Platform('WebAssembly', `<img class="` + ICON_CLASS + `" src="assets/icons/webassembly.svg">`);
+
+// Platforms - icons, names, etc...
+const Platforms = Object.freeze(
+    {
+        Windows: Windows,
+        MacOS: MacOS,
+        iOS: iOS,
+        Linux: Linux,
+        WebAssembly: WASM,
+    }
+);
