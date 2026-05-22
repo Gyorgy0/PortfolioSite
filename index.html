@@ -22,9 +22,9 @@
         <li><a id="navbarProjects" href="#Projects"></a></li>
     </ul>
     <main>
-        <section id="Home" class="section main">
+        <section class="noise section main">
             <!-- Welcome section -->
-            <div class="hero min-h-screen flex items-center max-w-6xl m-auto">
+            <div class="hero min-h-screen flex items-center max-w-6xl m-auto" id="Home">
                 <div class="hero-content">
                     <div class="landing container">
                         <h1 id="welcome"></h1>
@@ -32,9 +32,9 @@
                 </div>
             </div>
             <!-- Introduction section -->
-            <div class="hero min-h-screen flex items-center max-w-6xl m-auto">
+            <div class="hero min-h-screen flex items-center max-w-6xl m-auto" id="Introduction">
                 <div class="hero-content">
-                    <div id="Introduction" class="container cont-background justify-text">
+                    <div class="container cont-background justify-text">
                         <h1 id="aboutMe"></h1>
                     </div>
                     <div class="grid-2">
@@ -48,21 +48,68 @@
                 </div>
             </div>
             <!-- Skillset section -->
-            <div class="hero min-h-screen flex items-center max-w-6xl m-auto">
+            <div class="hero min-h-screen flex items-center max-w-6xl m-auto" id="Skillset">
                 <div class="hero-content">
-                    <div id="Skillset" class="container cont-background justify-text">
+                    <div class="container cont-background justify-text">
                         <p>as</p>
                     </div>
                 </div>
             </div>
+            <!-- My projects section -->
+            <div class="hero min-h-screen flex items-center max-w-6xl m-auto" id="Projects">
+                <div class="hero-content">
+                    <section class="game-section">
+                        <h1 class="landing container">My projects</h1>
+                        <div class="owl-carousel custom-carousel owl-theme">
+                            <div class="item"
+                                style="background-image: url(assets/project_thumbnails/reaction_resonance.png);">
+                                <div class="item-desc cont-background">
+                                    <h3>Reaction resonance</h3>
+                                    <p>This is a cross-platform falling-sand game written in Rust, using the egui GUI
+                                        framework. Inspired by Noita, The Powder Toy and Powder Game it simulates the
+                                        chemical and physical reactions with elements or other natural forces e.g.
+                                        gravity, buoyancy, viscosity, heat, etc...</p>
+                                </div>
+                            </div>
+                            <div class="item"
+                                style="background-image: url(assets/project_thumbnails/rugged_turtle.png);">
+                                <div class="item-desc cont-background">
+                                    <h3>Rugged turtle</h3>
+                                    <p>This is my first interpreter written in Rust. The program lets you control a
+                                        turtle with specific commands. The program is primarily for teaching
+                                        programming, by visualizing instruction graphically.</p>
+                                </div>
+                            </div>
+                            <div class="item"
+                                style="background-image: url(assets/project_thumbnails/arduino_snake_game.png);">
+                                <div class="item-desc cont-background">
+                                    <h3>Arduino Snake game</h3>
+                                    <p>This is my first Arduino project made back in 2023 with Jan (yodalego99).</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+        </section>
+        </div>
+        </div>
         </section>
     </main>
     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="index.js"></script>
     <script src="locale.js"></script>
+    <style src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"></style>
+    <style src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"></style>
+    <style src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"></style>
 </body>
-
+<footer class="container cont-background text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3">
+    <a href="https://github.com/Gyorgy0" target="_blank">https://github.com/Gyorgy0</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 </html>
