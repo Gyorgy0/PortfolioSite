@@ -1,11 +1,11 @@
 ﻿class Locale {
-    constructor(navbarHome, navbarIntro, navbarSkills, navbarEducation, navbarResume, navbarProjects, welcome, aboutMe, collaboration, appDev, pcEnthusiast) {
-        this.navbarHome = navbarHome;
+    constructor(identifier, navbarIntro, navbarSkills, navbarResume, navbarProjects, navbarContacts, welcome, aboutMe, collaboration, appDev, pcEnthusiast) {
+        this.identifier = identifier
         this.navbarIntro = navbarIntro;
         this.navbarSkills = navbarSkills;
-        this.navbarEducation = navbarEducation;
         this.navbarResume = navbarResume;
         this.navbarProjects = navbarProjects;
+        this.navbarContacts = navbarContacts;
         this.welcome = welcome;
         this.aboutMe = aboutMe;
         this.collaboration = collaboration;
@@ -14,12 +14,12 @@
 
     }
     default() {
-        this.navbarHome = "Home";
+        this.identifier = "EN"
         this.navbarIntro = "Introduction";
         this.navbarSkills = "Skillset";
-        this.navbarEducation = "Education";
         this.navbarResume = "Resume";
         this.navbarProjects = "My projects";
+        this.navbarContacts = "Contacts";
         this.welcome = "Hello, I'm Juraj Lukovics!";
         this.aboutMe = "I'm a hobbyist developer and PC enthusiast. My life's mission is to make software more efficient and more intuitive to use.";
         this.collaboration = "If you're as enthusiastic about making software more reliable and easier to use, then let's create something better for everyone together!";
@@ -27,6 +27,18 @@
         this.pcEnthusiast = "My other passion is repairing old personal computers. I really don't like to waste a perfectly good computer and It ry everything to repair or make it usable."
     }
 }
+
+class Project {
+    constructor(title, thumbnail, description, platforms, url) {
+        this.title = title;
+        this.thumbnail = thumbnail;
+        this.description = description;
+        this.platforms = platforms;
+        this.url = url;
+    }
+}
+
+const Projects = new Array(new Project("Reaction resonance"),);
 
 const knownProgLangs = ["Bash", "Rust", "Java", "C", "C++", "C#", "Python", "JavaScript", "HTML", "CSS", "MySQL", "SQLite"];
 const knownSoftwares = ["Git", "Docker", "Postman", "Android Studio", "Qt Creator", "Inkscape", "GIMP", "Arduino IDE", "Visual Studio", "Visual Studio Code", "Kate", "Rider", "LibreOffice", "OnlyOffice", "Microsoft Office"];

@@ -1,4 +1,6 @@
-﻿$(document).ready(function () {
+﻿var slider;
+
+$(document).ready(function () {
   // Add smooth scrolling to all links
   $("a").on('click', function (event) {
 
@@ -21,20 +23,27 @@
       });
     }
   });
-});
-
-
-$(".custom-carousel").owlCarousel({
-  autoWidth: true,
-  loop: false,
-  center: true,
-  nav: false,
-  dots: false
-});
-$(document).ready(function () {
-  $(".custom-carousel .item").click(function () {
-    $(".custom-carousel .item").not($(this)).removeClass("active");
-    $(this).toggleClass("active");
+  slider = new tns({
+    container: '.my-slider',
+    mode: 'carousel',
+    axis: 'horizontal',
+    startIndex: 0,
+    arrowKeys: true,
+    fixedWidth: 400,
+    edgePadding: 50,
+    gutter: 50,
+    controls: false,
+    nav: false,
+    controlsText: ['<','>'],
+    responsive: {
+      640: {
+      },
+      700: {
+      },
+      900: {
+        fixedWidth: 400,
+      }
+    },
+    mouseDrag: true,
   });
 });
-

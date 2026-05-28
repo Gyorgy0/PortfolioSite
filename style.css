@@ -5,422 +5,156 @@
 /********* Fonts Face CSS End **********/
 
 body {
-    background: linear-gradient(rgb(6, 89, 145), rgb(206, 238, 250));
+  background: linear-gradient(rgb(6, 89, 145), rgb(206, 238, 250));
 }
 
 .noise:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='500'%3E%3Cfilter id='noise' x='0' y='0'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeBlend mode='screen'/%3E%3C/filter%3E%3Crect width='500' height='500' filter='url(%23noise)' opacity='0.5'/%3E%3C/svg%3E");
-    mix-blend-mode: soft-light;
-    background-repeat: repeat;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='500'%3E%3Cfilter id='noise' x='0' y='0'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeBlend mode='screen'/%3E%3C/filter%3E%3Crect width='500' height='500' filter='url(%23noise)' opacity='0.5'/%3E%3C/svg%3E");
+  mix-blend-mode: soft-light;
+  background-repeat: repeat;
 }
 
 .landing {
-    text-shadow: 10px 5px 8px black;
-    margin-left: 12.5%;
-    margin-right: 12.5%;
-    margin-top: 10rem;
-    margin-bottom: 5rem;
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: auto;
-    text-align: center;
-    align-content: center;
+  text-shadow: 10px 5px 8px black;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: auto;
+  text-align: center;
+  align-content: center;
 }
 
 .container {
-    position: relative;
-    box-sizing: border-box;
-    width: 75%;
-    border-width: 5px solid black;
-    border-radius: 5px;
-    color: aliceblue;
-    text-shadow: 1px 1px 2px black;
-    display: block;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    padding: 15px;
+  position: relative;
+  box-sizing: border-box;
+  width: 75%;
+  border-width: 5px solid black;
+  border-radius: 5px;
+  color: aliceblue;
+  text-shadow: 1px 1px 2px black;
+  display: block;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 15px;
 }
 
 .grid-2 {
-    position: relative;
-    width: 75%;
-    box-sizing: border-box;
-    border-radius: 5px;
-    color: aliceblue;
-    text-shadow: 1px 1px 2px black;
-    margin-left: 12.5%;
-    margin-right: 12.5%;
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: auto;
+  position: relative;
+  width: 75%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: aliceblue;
+  text-shadow: 1px 1px 2px black;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: auto;
 }
 
 .subcontainer {
-    border-width: 5px solid black;
-    border-radius: 5px;
-    color: aliceblue;
-    text-shadow: 1px 1px 2px black;
-    display: block;
-    margin: 7.5%;
-    align-items: center;
-    padding: 15px;
+  border-width: 5px solid black;
+  border-radius: 5px;
+  color: aliceblue;
+  text-shadow: 1px 1px 2px black;
+  display: block;
+  margin: 7.5%;
+  align-items: center;
+  padding: 15px;
 }
 
-ul.navbar {
-    display: block;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background: #757171;
-    background: -webkit-linear-gradient(90deg, rgba(117, 113, 113, 0.5) 0%, rgba(66, 212, 126, 0.55) 50%, rgba(237, 221, 83, 0.6) 100%);
-    background: -moz-linear-gradient(90deg, rgba(117, 113, 113, 0.5) 0%, rgba(66, 212, 126, 0.55) 50%, rgba(237, 221, 83, 0.6) 100%);
-    background: linear-gradient(90deg, rgba(117, 113, 113, 0.5) 0%, rgba(66, 212, 126, 0.55) 50%, rgba(237, 221, 83, 0.6) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#757171", endColorstr="#EDDD53", GradientType=1);
-    list-style: none;
-    list-style-position: inside;
-    z-index: 1;
-    padding-left: 0;
+.navbar-bg-grad-custom {
+  background: #00b89f;
+  background: -webkit-linear-gradient(45deg, rgba(0, 184, 159, 1) 13%, rgba(0, 150, 113, 1) 49%, rgba(0, 140, 240, 1) 100%);
+  background: -moz-linear-gradient(45deg, rgba(0, 184, 159, 1) 13%, rgba(0, 150, 113, 1) 49%, rgba(0, 140, 240, 1) 100%);
+  background: linear-gradient(45deg, rgba(0, 184, 159, 1) 13%, rgba(0, 150, 113, 1) 49%, rgba(0, 140, 240, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00B89F", endColorstr="#008CF0", GradientType=0);
+  opacity: 0.9;
 }
 
-ul.navbar li a {
-    display: block;
-    color: black;
-    position: relative;
-    z-index: 1;
-    text-decoration: none;
-    font-size: large;
+.navbar-txt {
+  text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.836), 1px 1px 0px rgb(65, 65, 65);
 }
 
-ul.navbar li a:hover {
-    text-decoration: none;
-    color: blanchedalmond;
-    background-color: dimgrey;
-}
-
-ul.navbar li a:active {
-    text-decoration: none;
-    color: blanchedalmond;
-    text-shadow: 0px 0px 5px blanchedalmond;
-    background-color: dimgrey;
-}
-
-@media screen and (min-width: 700px) {
-    ul.navbar li a {
-        float: left;
-        padding: 15px;
-        border-left: solid white 1px;
-        border-right: solid white 1px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    ul.navbar li a {
-        float: none;
-        text-align: center;
-        align-content: center;
-        padding: 15px;
-        border-top: solid white 1px;
-        border-bottom: solid white 1px;
-    }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .blur-bg {
-    backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 
 .justify-text {
-    text-align: justify;
+  text-align: justify;
 }
 
 .cont-background {
-    background-color: gray;
+  background-color: gray;
 }
 
 .hero-content {
-    width: 100%;
+  width: 100%;
 }
 
 .section {
-    align-content: center;
-    align-items: center;
+  align-content: center;
+  align-items: center;
 }
 
 .items-center {
-    align-items: center;
+  align-items: center;
 }
 
 .max-w-6xl {
-    max-width: 72rem;
+  max-width: 72rem;
 }
 
 .min-h-screen {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .m-auto {
-    margin: auto;
+  margin: auto;
 }
 
 .main {
-    position: relative;
+  position: relative;
 }
 
-/******* Common Element CSS Start ******/
 * {
   margin: 0px;
   padding: 0px;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
+
 .clear {
   clear: both;
 }
-img {
-  max-width: 100%;
-  border: 0px;
-}
-ul,
-ol {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-  outline: none;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-}
-a:focus,
-a:active,
-a:visited,
-a:hover {
-  text-decoration: none;
-  outline: none;
-}
-a:hover {
-  color: #e73700;
-}
-h2 {
-  margin-bottom: 48px;
-  padding-bottom: 16px;
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 700;
-  position: relative;
-  text-transform: capitalize;
-}
-h3 {
-  margin: 0 0 10px;
-  font-size: 28px;
-  line-height: 36px;
-}
-button {
-  outline: none !important;
-}
-/******* Common Element CSS End *********/
 
-/* -------- title style ------- */
-.line-title {
+.carousel-nav {
   position: relative;
-  width: 400px;
-}
-.line-title::before,
-.line-title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 4px;
-  border-radius: 2px;
-}
-.line-title::before {
-  width: 100%;
-  background: #f2f2f2;
-}
-.line-title::after {
-  width: 32px;
-  background: #e73700;
+  display: grid;
+  grid-template-columns: 5% 65% 5%;
 }
 
-/******* Middle section CSS Start ******/
-/* -------- Landing page ------- */
-.game-section {
-  padding: 60px 50px;
-}
-.game-section .owl-stage {
-  margin: 15px 0;
-  display: flex;
-  display: -webkit-flex;
-}
-.game-section .item {
-  margin: 0 15px 60px;
-  width: 440px;
-  height: 800px;
-  display: flex;
-  display: -webkit-flex;
-  align-items: flex-end;
-  -webkit-align-items: flex-end;
-  background: #343434 no-repeat center center / cover;
-  border-radius: 16px;
-  overflow: hidden;
-  position: relative;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  cursor: pointer;
-}
-.game-section .item.active {
-  width: 500px;
-}
-.game-section .item:after {
-  content: "";
+.my-slider {
   display: block;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-.game-section .item-desc {
-  padding: 6px 24px 12px;
-  color: #fff;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  transform: translateY(calc(100% - 54px));
-  -webkit-transform: translateY(calc(100% - 54px));
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-}
-.game-section .item.active .item-desc {
-  transform: none;
-  -webkit-transform: none;
-}
-.game-section .item-desc p {
-  opacity: 0;
-  -webkit-transform: translateY(32px);
-  transform: translateY(32px);
-  transition: all 0.4s ease-in-out 0.2s;
-  -webkit-transition: all 0.4s ease-in-out 0.2s;
-}
-.game-section .item.active .item-desc p {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-}
-
-.owl-dots {
-    display: none;
-}
-
-.owl-nav {
-    display: none;
-}
-/******** Middle section CSS End *******/
-
-/***** responsive css Start ******/
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  h2 {
-    margin-bottom: 32px;
-  }
-  h3 {
-    margin: 0 0 8px;
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  /* -------- Landing page ------- */
-  .game-section {
-    padding: 50px 30px;
-  }
-  .game-section .item {
-    margin: 0 12px 60px;
-    width: 260px;
-    height: 360px;
-  }
-  .game-section .item.active {
-    width: 400px;
-  }
-  .game-section .item-desc {
-    transform: translateY(calc(100% - 46px));
-    -webkit-transform: translateY(calc(100% - 46px));
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  h2 {
-    margin-bottom: 32px;
-  }
-  h3 {
-    margin: 0 0 8px;
-    font-size: 24px;
-    line-height: 32px;
-  }
-  .line-title {
-    width: 330px;
-  }
-
-  /* -------- Landing page ------- */
-  .game-section {
-    padding: 50px 30px 40px;
-  }
-  .game-section .item {
-    margin: 0 12px 60px;
-    width: 240px;
-    height: 330px;
-  }
-  .game-section .item.active {
-    width: 360px;
-  }
-  .game-section .item-desc {
-    transform: translateY(calc(100% - 42px));
-    -webkit-transform: translateY(calc(100% - 42px));
-  }
-}
-
-@media (max-width: 767px) {
-  body {
-    font-size: 14px;
-  }
-  h2 {
-    margin-bottom: 20px;
-  }
-  h3 {
-    margin: 0 0 8px;
-    font-size: 19px;
-    line-height: 24px;
-  }
-  .line-title {
-    width: 250px;
-  }
-
-  /* -------- Landing page ------- */
-  .game-section {
-    padding: 30px 15px 20px;
-  }
-  .game-section .item {
-    margin: 0 10px 40px;
-    width: 200px;
-    height: 280px;
-  }
-  .game-section .item.active {
-    width: 270px;
-    box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
-    -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
-  }
-  .game-section .item-desc {
-    padding: 0 14px 5px;
-    transform: translateY(calc(100% - 42px));
-    -webkit-transform: translateY(calc(100% - 42px));
-  }
+  padding: 5%;
 }
