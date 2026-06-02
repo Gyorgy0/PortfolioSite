@@ -1,5 +1,5 @@
 ﻿class Locale {
-    constructor(identifier, navbarIntro, navbarSkills, navbarResume, navbarProjects, navbarContacts, welcome, aboutMe, collaboration, appDev, pcEnthusiast) {
+    constructor(identifier, navbarIntro, navbarSkills, navbarResume, navbarProjects, navbarContacts, welcome, aboutMe, collaboration, appDev, pcEnthusiast, supportedLangs, supportedPlatforms) {
         this.identifier = identifier
         this.navbarIntro = navbarIntro;
         this.navbarSkills = navbarSkills;
@@ -9,9 +9,10 @@
         this.welcome = welcome;
         this.aboutMe = aboutMe;
         this.collaboration = collaboration;
-        this.appDev = appDev
-        this.pcEnthusiast = pcEnthusiast
-
+        this.appDev = appDev;
+        this.pcEnthusiast = pcEnthusiast;
+        this.supportedLangs = supportedLangs;
+        this.supportedPlatforms = supportedPlatforms
     }
     default() {
         this.identifier = "EN"
@@ -25,20 +26,22 @@
         this.collaboration = "If you're as enthusiastic about making software more reliable and easier to use, then let's create something better for everyone together!";
         this.appDev = "I specialize in creating cross-platform applications that are usable on almost any device. With a focus on clean, efficient code I build reliable applications with intuitive interfaces.";
         this.pcEnthusiast = "My other passion is repairing old personal computers. I really don't like to waste a perfectly good computer and It ry everything to repair or make it usable."
+        this.supportedLangs = "Supported languages:";
+        this.supportedPlatforms = "Supported platforms:"
     }
 }
 
 class Project {
-    constructor(title, thumbnail, description, platforms, url) {
+    constructor(title, thumbnailURL, description, platforms, url) {
         this.title = title;
-        this.thumbnail = thumbnail;
+        this.thumbnailURL = thumbnailURL;
         this.description = description;
         this.platforms = platforms;
         this.url = url;
     }
 }
 
-const Projects = new Array(new Project("Reaction resonance"),);
+const Projects = new Array(new Project("Reaction resonance", "assets/project_thumbnails/reaction_resonance.png"),);
 
 const knownProgLangs = ["Bash", "Rust", "Java", "C", "C++", "C#", "Python", "JavaScript", "HTML", "CSS", "MySQL", "SQLite"];
 const knownSoftwares = ["Git", "Docker", "Postman", "Android Studio", "Qt Creator", "Inkscape", "GIMP", "Arduino IDE", "Visual Studio", "Visual Studio Code", "Kate", "Rider", "LibreOffice", "OnlyOffice", "Microsoft Office"];

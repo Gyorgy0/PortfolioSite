@@ -27,9 +27,10 @@ $(document).ready(function () {
     container: '.my-slider',
     mode: 'carousel',
     axis: 'horizontal',
+    items: 1,
     startIndex: 0,
     arrowKeys: true,
-    fixedWidth: 400,
+    fixedWidth: 600,
     edgePadding: 50,
     gutter: 50,
     controls: false,
@@ -37,11 +38,13 @@ $(document).ready(function () {
     controlsText: ['<','>'],
     responsive: {
       640: {
+        fixedWidth: 600,
       },
       700: {
+        fixedWidth: 600,
       },
       900: {
-        fixedWidth: 400,
+        fixedWidth: 600,
       }
     },
     mouseDrag: true,

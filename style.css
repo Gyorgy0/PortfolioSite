@@ -45,6 +45,17 @@ body {
   padding: 15px;
 }
 
+.slide {
+  position: relative;
+  box-sizing: border-box;
+  border-width: 5px solid black;
+  border-radius: 5px;
+  color: aliceblue;
+  text-shadow: 1px 1px 2px black;
+  display: block;
+  padding: 15px;
+}
+
 .grid-2 {
   position: relative;
   width: 75%;
@@ -93,8 +104,20 @@ body {
   backdrop-filter: blur(4px);
 }
 
+.left-align-text {
+  text-align: left;
+}
+
+.right-align-text {
+  text-align: right;
+}
+
 .justify-text {
   text-align: justify;
+}
+
+.center-text {
+  text-align: center;
 }
 
 .cont-background {
@@ -157,4 +180,9 @@ body {
 .my-slider {
   display: block;
   padding: 5%;
+}
+
+.project-thumbnail {
+  width: 100%;
+  padding: 5px;
 }
